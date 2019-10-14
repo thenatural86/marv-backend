@@ -1,2 +1,0 @@
-class UserCharactersController < ApplicationController
-end
