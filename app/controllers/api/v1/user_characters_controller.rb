@@ -1,5 +1,6 @@
 class Api::V1::UserCharactersController < ApplicationController
   def index
+    # byebug
       user_characters = UserCharacter.all
 
       render json: user_characters
