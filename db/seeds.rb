@@ -223,4 +223,4 @@ comic_hash_one.each do |comic|
     )
 end
 
-User.create(name: "test", username:"test", password:"test")
+User.create(username:"test", password:"test")

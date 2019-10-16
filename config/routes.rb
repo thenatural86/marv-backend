@@ -5,10 +5,14 @@ Rails.application.routes.draw do
       resources :comic_characters
       resources :comics
       resources :user_characters
-      resources :users
       resources :characters
+      resources :users
+      
+      post "/users", to: "users#create"
+      get "/profile", to: "auth#profile"
+      post "/login", to: "auth#login"
+      post "/user_characters", to: "/user_characters#create"
+     
     end
   end
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
