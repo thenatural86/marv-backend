@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       
       post "/users", to: "users#create"
       get "/profile", to: "auth#profile"
+      get "/login", to: "auth#login"
       post "/login", to: "auth#login"
       post "/user_characters", to: "/user_characters#create"
      
